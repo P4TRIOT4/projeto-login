@@ -1,6 +1,81 @@
-:root{
-    --cor1: #042326;
-    --cor2: #0F5959;
-    --cor3: #107361;
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+:root{
+    --cor1: #011212;
+    --cor2: #022601;
+    --cor3: #0A4001;
+}
+
+/*mobile first*/
+
+body{
+    background-color: #011212;
+    width: 100vw;
+    height: 100vh;
+}
+
+main{
+   position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+#login{
+    background-color: white;
+    width: 300px;
+    height: 500px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px #0A4001;
+    transition: width 0.5s, hight 0.5s;
+    transition-timing-function: ease;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#imagem{
+  background-image: url(../imagens/ng_wallpaper\ 1.JPG); 
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 310px;
+  height: 200px;
+  border: 1px solid black;
+}
+    
+
+
+#form > h1, p{
+     text-align: center;
+}
+
+#entrar{
+    background-color: #0A4001;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid black;
+    display: block;
+    margin: auto;
+    margin-bottom: 0px;
+    width: 250px;
+    height: 45px;
+}
+
+#esqueci{
+    color: #0A4001;
+   border-radius: 10px;
+    border: 3px solid #0A4001;
+    display: block;
+    margin-top: 0px;
+    margin: auto;
+    width: 246px;
+    height: 45px;  
+}
