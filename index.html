@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login ng</title>
 
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=key" />
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=mail_off" />
+
+
+
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/midia-query.css">
 </head>
@@ -19,16 +26,32 @@
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente, faça login para acessar sua conta</p>
 
-                <form action="login.php" method="post">
+                <form action="login.php" method="post" autocomplete="on">
 
-                    <input type="text" name="email" id="iemail"> <br>
+                    <div class="campo">
+                     <span class="material-symbols-outlined">key</span>
+
+                        <input type="email" name="email" id="iemail" placeholder="@funaninho.123@gmail.com" autocomplete="email" required maxlength="30"> 
+                        <label for="iemail">seu email</label>
+                        <br>
+                    </div>
                     
-                    <input type="password" name="senha" id="isenha"> <br>
+                    <div class="campo">
+                       <span class="material-symbols-outlined">key</span>
+
+                        <input type="password" name="senha" id="isenha" placeholder="senha" autocomplete="current-password" required minlength="8"> 
+                         <label for="isenha">sua senha</label>
+                        <br>
+                    </div>
                     
                   
                     <input type="submit" value="Entrar" id="entrar"> <br>
 
-                    <input type="submit" value="Esqueci a senha" id="esqueci"> 
+                   <a href="esqueci.html">Esqueci a senha
+                    <span class="material-symbols-outlined">
+mail_off
+</span>
+                   </a>
                 </form>
             </div>
 
