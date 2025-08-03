@@ -50,37 +50,101 @@ main{
   height: 200px;
   border: 1px solid black;
 }
-    
-
 
 #form > h1{
      text-align: center;
-     margin-bottom: 10px;
+     margin-bottom: 6px;
 }
 
 #form > p{
     font-size: 0.8em;
+    text-align: center;
+    margin-bottom: 15px;
 }
+
+
+.campo{
+    background-color: #082f01f1;
+    border: 2px solid #082f01f1;
+    width: 90%;
+    height: 40px;
+    border-radius: 10px;
+    margin: 5px auto;
+}
+
+.campo > label{
+    display: none;
+}
+
+.campo > span{
+    color: rgb(220, 219, 219);
+
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+.campo > input{
+    background-color: #80bb75;
+    font-size: 1em;
+    width: calc(100% - 40px);
+    height: 100%;
+    border-radius: 10px;
+
+    transform: translate(40px, -42px);
+}
+
+.campo > input:focus-within{
+    background-color: white;
+}
+
 
 #entrar{
     background-color: #0A4001;
     color: white;
+    font-size: 1em;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.747);
     border-radius: 10px;
     border: 1px solid black;
     display: block;
     margin: auto;
     margin-bottom: 0px;
-    width: 250px;
-    height: 45px;
+    margin-top: 10px;
+    margin-bottom: 7px;
+    width: 90%;
+    height: 40px;
 }
 
-#esqueci{
-    color: #0A4001;
+#entrar:hover{
+    background-color: #082f01;
+    cursor: pointer;
+}
+
+.botao{
+   display: block;
+   text-align: center;
+   font-size: 1em;
+   width: 90%;
+   height: 40px;
+   margin: auto;
+   background-color: #ffffff;
+   color: #082f01;
+   border: 1px solid #0A4001;
    border-radius: 10px;
-    border: 3px solid #0A4001;
-    display: block;
-    margin-top: 0px;
-    margin: auto;
-    width: 246px;
-    height: 45px;  
+   text-decoration: none;
+   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.518);
+}
+
+.botao:hover{
+    background-color: #0A4001;
+    color: white;
+}
+
+.botao > p{
+    padding-top: 7px;
+}
+
+#ic{
+    font-size: 0.8em;
+
 }

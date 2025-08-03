@@ -2,8 +2,10 @@
     body{
         background-image: linear-gradient(to top, #0A4001, #011212);
     }
+     
     #login{
         width: 80vw;
+        height: 300px;
     }
     #imagem{
        float: left; 
@@ -14,6 +16,10 @@
         float: right;
         width: 70%;
     }
+    #entrar{
+        margin-top: 25px;
+    }
+
 }
 
 @media screen and (min-width:1025px) {
@@ -22,6 +28,7 @@
     }
     #login{
         width: 950px;
+        height: 370px;
     }
     #imagem{
         float: right;
@@ -38,6 +45,10 @@
      font-size: 2em;
     }
     #form > p{
-        font-size: 1.2em;
+        font-size: 1em;
     }
+    #entrar{
+        margin-top: 25px;
+    }
+
 }
